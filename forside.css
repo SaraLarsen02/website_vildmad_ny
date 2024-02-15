@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 html {
   --primary_g: rgba(58, 133, 51, 1); /*knap*/
   /* --secondary_g: rgba(4, 112, 134, 1);*/
@@ -52,7 +58,7 @@ body {
 .white_container {
   background-color: var(--background);
   border-radius: 30px;
-  margin: 0 5%;
+  margin: 5% 5% 0 5%;
   padding: 0 15% 10% 15%;
   /* text-align: center; */
   /* display: flex; */
