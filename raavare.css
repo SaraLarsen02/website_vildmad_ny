@@ -1,0 +1,187 @@
+/* --------------- RESET --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --------------- BILLEDER --------------- */
+.heroimg_raavare {
+    height: auto;
+    width: 100%;
+}
+
+.img_raavare {
+    position: absolute;
+    height: auto;
+    width: 20%;
+    top: -19%;
+    left: 38%;
+    border-radius: 50%;
+}
+
+/* --------------- BAGGRUND --------------- */
+.green_backgrpund {
+    position: relative;
+    background-color: rgb(209, 209, 209);
+    padding: 16% 5%;
+}
+
+.white_box {
+    display: flex;
+    gap: 5%;
+    background-color: white;
+    border-radius: 30px;
+    margin: 5% 5% 0 5%;
+    padding: 5% 10% 12% 10%;
+}
+
+/* --------------- LAYOUT --------------- */
+.facts_article {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    align-items: center;
+}
+
+.text_recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.recipes_section {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5%;
+    margin: 0 10% 8% 10%;
+}
+
+/* --------------- DYNAMISK --------------- */
+/* Navn på råvare */
+.name_raavare {
+    margin: 0 0 0 44%;
+}
+
+/* Desription */
+.icon_description {
+    height: auto;
+    width: 30%;
+}
+
+.description_raavare {}
+
+.text_description_raavare {}
+
+/* Season */
+.icon_season {
+    height: auto;
+    width: 30%;
+}
+
+.season_raavare {}
+
+.text_season_raavare {}
+
+/* Storage */
+.icon_storage {
+    height: auto;
+    width: 30%;
+}
+
+.storage_raavare {}
+
+.text_storage_raavare {}
+
+/* Recipes */
+.img_recipes {}
+
+.name_recipes {
+    text-align: center;
+    margin: 3% 0;
+}
+
+/* --------------- MOBILE --------------- */
+@media (max-width: 800px) {
+    .white_box {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    .facts_article {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        align-items: center;
+    }
+}
+
+
+/* --------------- FOOTER --------------- */
+footer {
+    background-color: black;
+    display: flex;
+    padding: 4% 10%;
+}
+
+.icon_social {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.img_icon_social {
+    height: auto;
+    width: 12%;
+    padding: 2.5% 0;
+}
+
+.logo_footer {
+    height: auto;
+    width: 12%;
+}
+
+.text_footer {
+    color: white;
+    margin: 4% 0 0 0;
+}
+
+.logo_layout {
+    display: flex;
+    gap: 5%;
+}
+
+/* FORM */
+form {
+    display: grid;
+    gap: 10%;
+}
+
+label, input, button {
+    display: block;
+}
+
+button {
+    padding: 2%;
+    width: 55%;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.text_form {
+    color: white;
+}
+
