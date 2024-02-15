@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --primary_g: rgba(58, 133, 51, 1); /*knap*/
+  /* --secondary_g: rgba(4, 112, 134, 1);*/
+  --background: rgb(255, 255, 255);
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* mobil version */
+.grid_hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1.7fr 1fr;
+}
+
+.hero_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.text_hero {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  font-size: 5cqw;
+  text-align: center;
+}
+
+.logo_hero {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  width: 50%;
+  margin: 15% 25%;
+  height: auto;
+  object-fit: cover;
+}
+
+.green_box {
+  background-color: rgba(26, 121, 78, 1);
+}
+
+.white_container {
+  background-color: var(--background);
+  border-radius: 30px;
+  margin: 0 5%;
+  padding: 0 15% 10% 15%;
+  /* text-align: center; */
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 100%; */
+  height: 100%;
+}
+
+.green_box_bottom {
+  background-color: rgba(26, 121, 78, 1);
+  height: 50px;
+}
+
+.button {
+  background-color: var(--primary_g);
+  padding: 3% 10%;
+  margin: 10% 0;
+  color: var(--background);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.billeder_forside {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.p_padding {
+  padding-top: 5%;
+}
+
+.white_background {
+  background-color: var(--background);
+  text-align: center;
+  padding-top: 10%;
+}
+
+.sanke_header {
+  margin-bottom: 5%;
+}
+/****************** Hvad er at sanke */
+@media screen and (max-width: 800px) {
+  .content_1_3 {
+    padding: 25% 0 0 0;
+  }
+
+  .h3_sanke {
+    padding: 10% 0;
+  }
+
+  .grid_sanke_mobil {
+    padding: 10%;
+  }
+
+  .icons_forside {
+    width: 70%;
+    height: auto;
+  }
+
+  .pil {
+    padding-top: 70%;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_sanke_desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .grid_2_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    padding-top: 10%;
+  }
+
+  .white_container {
+    background-color: var(--background);
+    border-radius: 30px;
+    margin: 5% 5% 0 5%;
+    padding: 0 10% 10% 10%;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .billeder_forside {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  .grid_sanke_mobil {
+    display: none;
+  }
+
+  .grid_sanke_desktop {
+    padding: 0 10% 10% 10%;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .find {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .pil_find {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding-top: 50%;
+  }
+
+  .indsamle {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .pil_indsamle {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding-top: 50%;
+  }
+
+  .pil_forbered {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding-top: 50%;
+  }
+
+  .madlavning {
+    grid-column: 3 / span 1;
+  }
+
+  .h3_sanke {
+    padding: 10% 0;
+  }
+}
