@@ -78,10 +78,16 @@ body {
   padding: 3% 10%;
   margin: 10% 0;
   color: var(--background);
-  border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  border: 2px solid var(--background);
+}
+
+.button:hover {
+  background-color: var(--background);
+  color: var(--primary_g);
+  border: 2px solid var(--primary_g);
 }
 
 .billeder_forside {
