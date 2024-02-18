@@ -214,6 +214,7 @@ footer {
 .logo_layout {
     display: flex;
     gap: 5%;
+    text-decoration: none;
 }
 
 /* FORM */
@@ -263,6 +264,7 @@ button:hover {
     .logo_layout {
         display: flex;
         gap: 5%;
+        text-decoration: none;
     }
 
     .logo_footer {
