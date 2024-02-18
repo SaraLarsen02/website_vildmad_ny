@@ -21,8 +21,8 @@ img {
 .img_raavare {
     position: absolute;
     height: auto;
-    width: 20%;
-    top: -19%;
+    width: 15%;
+    top: -14%;
     left: 38%;
     border-radius: 50%;
 }
@@ -47,7 +47,7 @@ img {
 .facts_article {
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -69,7 +69,11 @@ img {
 /* --------------- DYNAMISK --------------- */
 /* Navn på råvare */
 .name_raavare {
-    margin: 0 0 0 44%;
+    /* margin: 0 0 0 44%; */
+    /* display: flex; */
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Desription */
