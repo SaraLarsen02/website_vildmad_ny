@@ -14,9 +14,13 @@
 </head>
 
 <body>
+    <div id="bag_header_container">
+        <div id="bag_header"></div>
+    </div>
     <header>
+
         <div class="container">
-            <a href="index.html">
+            <a id="logo_container" href="index.html">
                 <img class="logo" src="indhold/logo.svg" alt="Vild mad logo">
                 <h2 id="logo_navn">VILD MAD</h2>
             </a>
@@ -38,6 +42,7 @@
             <a href="">Encyclopedia</a>
         </nav>
     </header>
+
     <main>
         <div class="grid_hero">
             <div class="kategori_billede"><img class="kategori_billede" src="indhold/landskab_kategori.webp"
@@ -47,68 +52,130 @@
                 <h1>Landscapes</h1>
             </div>
         </div>
+
+
+
         <div class="baggrund_box">
-
-
-
-
-
-        </div>
-
-
-    </main>
-
-
-
-
-
-
-
-
-
-    <!-- 
-            <div id="kategori_grid">
-                <section>
-                    <img class="kategori_billede" src="indhold/landskab.png" alt="Landskab">
-                    <h2>OPEN LAND</h2>
+            <section class="kategori_grid">
+                <div class="ikon" id="ikon_land">
+                    <img class="kategori_ikon_baggrund" src="indhold/Ikon_Abent_Landat.webp" alt="Landskab">
+                </div>
+                <div class="kategori_text">
+                    <h3>OPEN LAND</h3>
                     <p>In the open countryside, you'll discover hedgerows, field drains, and grasslands, filled with
                         different herbs, nuts, fruits, and berries.
                     </p>
-                    <button>Information</button>
-                    <button>Discover</button>
-                </section>
-                <section>
-                    <img class="kategori_billede" src="indhold/vand.png" alt="Vandnært landskab">
-                    <h2>WATERWAYS</h2>
+                    <div class="button_grid">
+                        <button class="button">Information</button>
+                        <button class="button">Read More</button>
+                    </div>
+                </div>
+            </section>
+            <section class="kategori_grid">
+                <div class="ikon" id="ikon_hav">
+                    <img class="kategori_ikon_baggrund" src="indhold/Ikon_Hav.webp" alt="hav">
+                </div>
+                <div class="kategori_text">
+                    <h3>WATERWAYS</h3>
                     <p>By the seaside, you'll come across salt marshes and beaches with seaweed and herbs. Along
                         freshwater lakes, streams, and rivers, herbs and flowers thrive.
                     </p>
-                    <button>Information</button>
-                    <button>Discover</button>
-                </section>
-                <section>
-                    <img class="kategori_billede" src="indhold/skov.png" alt="Skov landskab">
-                    <h2>FOREST</h2>
+                    <div class="button_grid">
+                        <button class="button">Information</button>
+                        <button class="button">Read More</button>
+                    </div>
+                </div>
+                <div></div>
+            </section>
+            <section class="kategori_grid">
+                <div class="ikon" id="ikon_skov">
+                    <img class="kategori_ikon_baggrund" src="indhold/Ikon_skov.webp" alt="skov">
+                </div>
+                <div class="kategori_text">
+                    <h3>FOREST</h3>
                     <p>In both coniferous and deciduous forests, one can discover mushrooms, leaves that are safe to
                         eat, shoots, herbs, berries, and nuts.
                     </p>
-                    <button>Information</button>
-                    <button>Discover</button>
-                </section>
-                <section>
-                    <img class="kategori_billede" src="indhold/by.png" alt="by">
-                    <h2>CITIES AND TOWNS</h2>
-                    <p>In urban parks, harbors, and greenspaces, you will find herbs, fruits, nuts, and berries.</p>
-                    <button>Information</button>
-                    <button>Discover</button>
-                </section>
+                    <div class="button_grid">
+                        <button class="button">Information</button>
+                        <button class="button">Read More</button>
+                    </div>
+                </div>
+            </section>
+            <section class="kategori_grid">
+                <div class="ikon" id="ikon_by">
+                    <img class="kategori_ikon_baggrund" src="indhold/Ikon_BY.webp" alt="by">
+                </div>
+                <div class="kategori_text">
+                    <h3>CITIES AND TOWNS</h3>
+                    <p>In urban parks, harbors, and greenspaces, you will find herbs, fruits, nuts, and berries.
+                    </p>
+                    <div class="button_grid">
+                        <button class="button">Information</button>
+                        <button class="button">Read More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            </div>
 
 
- -->
+        <div class="baggrund_box">
+            <section class="kategori_flex">
+                <div class="ikon_land">
+                    <img class="kategori_landskab" src="indhold/Ikon_Abent_Landat.webp" alt="Landskab">
+
+                </div>
 
 
+            </section>
+            <section class="kategori_flex">
+                <div class="ikon_hav">
+                    <img class="kategori_landskab" src="indhold/Ikon_Hav.webp" alt="Vandnært landskab">
+                </div>
+                <div>
+                    <h3>WATERWAYS</h3>
+                    <p>By the seaside, you'll come across salt marshes and beaches with seaweed and herbs. Along
+                        freshwater lakes, streams, and rivers, herbs and flowers thrive.
+                    </p>
+                </div>
+                <div class="button_grid">
+                    <button class="button">Information</button>
+                    <button class="button">Read More</button>
+                </div>
+            </section>
+            <section class="kategori_flex">
+                <div class="ikon_skov">
+                    <img class="kategori_landskab" src="indhold/Ikon_skov.webp" alt="Skov landskab">
+                </div>
+                <div>
+                    <h3>FOREST</h3>
+                    <p>In both coniferous and deciduous forests, one can discover mushrooms, leaves that are safe to
+                        eat, shoots, herbs, berries, and nuts.
+                    </p>
+                </div>
+                <div class="button_grid">
+                    <button class="button">Information</button>
+                    <button class="button">Read More</button>
+                </div>
+            </section>
+            <section class="kategori_flex">
+                <div class="ikon_by">
+                    <img class="kategori_landskab" src="indhold/Ikon_BY.webp" alt="by">
+                </div>
+                <div>
+                    <h3>CITIES AND TOWNS</h3>
+                    <p>In urban parks, harbors, and greenspaces, you will find herbs, fruits, nuts, and berries
+                    </p>
+
+                </div>
+                <div class="button_grid">
+                    <button class="button">Information</button>
+                    <button class="button">Read More</button>
+                </div>
+            </section>
+        </div>
+    </main>
     <script src="script.js"></script>
     <script src="kategori.js"></script>
 </body>
