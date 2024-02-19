@@ -181,6 +181,13 @@ body {
     padding: 10% 20% 0 20%;
   }
 
+  .icons_forside {
+    width: 60%;
+    height: auto;
+    align-items: center;
+    margin-left: 15%;
+  }
+
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 0.7fr 1fr;
@@ -193,6 +200,7 @@ body {
   .pil_find {
     grid-column: 2 / span 1;
     padding-top: 90%;
+    padding-left: 30%;
   }
 
   .indsamle {
@@ -202,11 +210,13 @@ body {
   .pil_indsamle {
     grid-column: 2 / span 1;
     padding-top: 90%;
+    padding-left: 30%;
   }
 
   .pil_forbered {
     grid-column: 2 / span 1;
     padding-top: 90%;
+    padding-left: 30%;
   }
 
   .madlavning {
