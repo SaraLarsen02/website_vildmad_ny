@@ -8,11 +8,16 @@ fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data?id=eq.1", 
   },
 })
   .then((res) => res.json())
-  .then(showData);
+  .then((data) => showData(data));
 
-function showData(items) {
-  console.table(items);
-  // document.querySelector(".name_raavare").textContent = items.name;
+function showData(product) {
+  console.table(product);
+  // document.querySelector(".heroimg_raavare").scr = `https://vildmadv2.vps.webdock.io/application/files/8916/2436/4262/Kantarel_ravarekort_app.png`;
+  // document.querySelector(".name_raavare").textContent = product.name;
+  // document.querySelector(".text_description_raavare").textContent = product.description;
+  // document.querySelector(".text_season_raavare").textContent = product.season;
+  // document.querySelector(".text_storage_raavare").textContent = product.type;
+
   // items.forEach()
 }
 
