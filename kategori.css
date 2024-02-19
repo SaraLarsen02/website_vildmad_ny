@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-#logo_header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: fit-content;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -20,96 +14,23 @@ img {
   background-color: #eeeeee;
   border-radius: 30px;
   margin: 5% 5% 0 5%;
-  padding: 50px 7% 10% 7%;
+  padding: 50px 10% 10% 15%;
   justify-content: center;
   height: 100%;
-  /* display: grid; */
 }
 
-.kategori_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  padding-top: 0px;
-  gap: 15px;
-  /* grid-template-rows: 1fr; */
-}
-
-.kategori_ikon_baggrund {
-  width: 70%;
-  height: auto;
-  margin-top: 15%;
-  /* margin-right: 15%;
-  margin-bottom: 15%;
-  margin-left: 15%; */
-  filter: brightness(0) invert(1);
-  /* object-fit: contain; */
-  aspect-ratio: 100/100;
-  margin: auto;
-}
-
-.ikon {
+.kategori_billede {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  align-content: center;
-  justify-content: center;
-}
-
-#ikon_land {
-  background-color: #f6af52;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-#ikon_hav {
-  background-color: #3d50e3;
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-
-#ikon_skov {
-  background-color: #439e47;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-#ikon_by {
-  background-color: #3d50e3;
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-
-.kategori_text {
-  grid-column: 2/4;
-  grid-row: 1;
+  height: auto;
+  object-fit: contain;
+  grid-column: 1/4;
+  grid-row: 1/4;
 }
 
 .grid_hero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-}
-
-.kategori_billede {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  grid-column: 1/4;
-  grid-row: 1/4;
-}
-#bag_header_container {
-  height: 0;
-  overflow: visible;
-  position: relative;
-}
-#bag_header {
-  height: 110px;
-  background-color: #282828;
-  position: relative;
-  top: -10px;
 }
 
 .hero_text {
@@ -120,47 +41,232 @@ img {
   font-weight: 700;
   font-size: 4vw;
   color: white;
-  margin-top: 100px;
+  margin-top: 25px;
 }
 
-.button_grid {
-  grid-column: 2/4;
-}
-
-/* 
-
-.baggrund_box {
-  background-color: white;
-  border-radius: 30px;
-  margin: 5% 5% 0 5%;
-  padding: 0 15% 10% 15%;
-  justify-content: center;
-  height: 100%;
-}
-
-
-
-#kategori_grid {
+.kategori_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: 20px;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
-.kategori_billede {
-  width: 200px;
+.ikon {
+  width: 50%;
+  height: 100%;
+  margin-left: 23%;
 }
 
-#logo_navn {
-  font-family: "public sans";
-  margin-left: 114px;
+/*Media start*/
+
+@media (min-width: 800px) {
+  .kategori_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+  }
+
+  .ikon {
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .kategori_text {
+    grid-column: 2/4;
+    grid-row: 1;
+  }
+
+  .grid_hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .kategori_billede {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+
+  .hero_text {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    text-align: center;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    color: white;
+    margin-top: 100px;
+  }
+  #ikon_land {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #ikon_hav {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  #ikon_by {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  #ikon_skov {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  #content_pop {
+    background-color: #282828;
+    height: 70%;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    top: 25%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  #closePopup {
+    margin: 25px;
+    margin-left: 37%;
+  }
 }
 
-.logo {
-  width: 70px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 20px;
-} */
+/*Knap*/
+
+#link_skov {
+  text-decoration: none;
+  color: white;
+}
+
+.kate_button {
+  color: white;
+  background-color: var(--primary_g);
+  padding: 3% 10%;
+  margin: 5% 2%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid var(--background);
+}
+
+.button_land:hover {
+  background-color: var(--background);
+  color: #f6af52;
+  border: 2px solid #f6af52;
+}
+.button_by:hover {
+  color: #745274;
+  background-color: var(--background);
+  border: 2px solid #745274;
+}
+
+#closePopu:hover {
+  color: #439e47;
+  background-color: var(--background);
+  border: 2px solid #439e47;
+}
+
+.button_skov:hover {
+  color: #439e47;
+  background-color: var(--background);
+  border: 2px solid #439e47;
+}
+
+#link_skov:hover {
+  color: #439e47;
+}
+
+.button_hav:hover {
+  color: #3d50e3;
+  background-color: var(--background);
+  border: 2px solid #3d50e3;
+}
+
+.button_land {
+  background-color: #f6af52;
+}
+
+.button_hav {
+  background-color: #3d50e3;
+}
+
+.button_skov {
+  background-color: #439e47;
+}
+
+.button_by {
+  background-color: #745274;
+}
+
+/*pop up knap*/
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#content_pop {
+  background-color: #282828;
+  height: auto;
+  width: 50%;
+  left: 25%;
+  position: relative;
+  top: 25%;
+  padding: 30px;
+  border-radius: 30px;
+  color: white;
+}
+
+#content_pop p {
+  line-height: 1.8;
+}
+
+#content_pop h4 {
+  margin-bottom: 5px;
+}
+
+#content_pop h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/*Header start*/
 
 #logo_container {
   display: grid;
@@ -168,6 +274,25 @@ img {
   align-content: center;
   gap: 20px;
   text-decoration: none;
+}
+
+#logo_header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: fit-content;
+}
+
+#bag_header {
+  height: 110px;
+  background-color: #282828;
+  position: relative;
+  top: -10px;
+}
+
+#bag_header_container {
+  height: 0;
+  overflow: visible;
+  position: relative;
 }
 
 #logo_navn {
@@ -280,7 +405,7 @@ header {
   transition: 0.4s;
 }
 
-@media (min-width: 830px) {
+@media (min-width: 950px) {
   .mobile-nav {
     display: none;
   }
@@ -295,12 +420,12 @@ nav {
   grid-gap: 80px;
   grid-template-columns: repeat(4, auto);
 
-  @media (max-width: 830px) {
+  @media (max-width: 980px) {
     display: none;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .container a {
     text-decoration: none;
     font-size: 1.2rem;
