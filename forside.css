@@ -23,7 +23,7 @@ body {
 /* mobil version */
 .grid_hero {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1.7fr 1fr;
 }
 
