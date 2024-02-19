@@ -24,7 +24,7 @@ body {
 .grid_hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.7fr 1fr;
+  grid-template-rows: 1fr 1.7fr 1fr;
 }
 
 .hero_image {
@@ -58,7 +58,7 @@ body {
 .white_container {
   background-color: var(--background);
   border-radius: 30px;
-  margin: 5% 5% 0 5%;
+  margin: 0 5%;
   padding: 0 15% 10% 15%;
   justify-content: center;
   height: 100%;
@@ -128,7 +128,8 @@ body {
   }
 
   .pil {
-    padding-top: 70%;
+    margin-top: 50%;
+    padding: 15%;
   }
 
   .grid_1_1 {
@@ -152,7 +153,7 @@ body {
   .white_container {
     background-color: var(--background);
     border-radius: 30px;
-    margin: 5% 5% 0 5%;
+    margin: 0 5%;
     padding: 0 10% 10% 10%;
     justify-content: center;
     height: 100%;

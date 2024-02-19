@@ -120,7 +120,7 @@ ol.breadcrumb a:hover {
 }
 
 .forest_list_image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 @media screen and (max-width: 800px) {
   .forest_list {
