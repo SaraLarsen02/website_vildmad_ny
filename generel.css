@@ -187,7 +187,7 @@ header {
   background-color: rgb(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
-  font-family: "public sans";
+  font-family: "Inria Sans", sans-serif;
   font-size: 20px;
   z-index: 100;
   background-blend-mode: lighten;
@@ -291,7 +291,7 @@ header {
 
 nav {
   display: grid;
-  grid-gap: 80px;
+  grid-gap: 60px;
   grid-template-columns: repeat(4, auto);
 
   @media (max-width: 980px) {
@@ -310,3 +310,127 @@ nav {
 }
 
 /* HEADER SLUT*/
+
+/* --------------- FOOTER --------------- */
+footer {
+  background-color: rgb(25, 25, 25);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 3% 10%;
+}
+
+.icon_social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26%;
+}
+
+.img_icon_social {
+  width: auto;
+  height: 3.4rem;
+}
+
+.logo_footer {
+  height: auto;
+  width: 16%;
+}
+
+.text_footer {
+  color: white;
+  margin-top: 2%;
+  
+}
+
+.logo_layout {
+  display: flex;
+  gap: 5%;
+  text-decoration: none;
+}
+
+/* FORM */
+
+label, input, button {
+  display: block;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  margin: 10% 0;
+  padding: 4%;
+  width: 140%;
+}
+
+button {
+  padding: 3% 6%;
+  width: 55%;
+  color: white;
+  background-color: var(--primary_g);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid var(--primary_g);
+}
+
+button:hover {
+  transition: 0.3s;
+  background-color: var(--background);
+  color: var(--primary_g);
+  border: 2px solid var(--primary_g);
+}
+
+.text_form {
+  color: white;
+  font-size: 1.6vw;
+}
+
+/* --------------- FOOTER - MOBILE --------------- */
+@media (max-width: 800px) {
+  footer {
+      background-color: rgb(25, 25, 25);
+      display: block;
+      padding: 11% 10% 12% 10%;
+  }
+
+  .logo_layout {
+      display: flex;
+      gap: 5%;
+      text-decoration: none;
+  }
+
+  .logo_footer {
+      height: auto;
+      width: 25%;
+  }
+
+  .text_footer {
+      color: white;
+      margin-top: 9%;
+    }
+
+  .icon_social {
+      display: flex;
+      gap: 9%;
+      margin-top: 14%;
+      margin-right: 0px;
+      margin-bottom: 14%;
+      margin-left: 0px;
+  }
+
+  /* FORMS */
+  .text_form {
+      color: white;
+      font-size: 6vw;
+    }
+  
+  input {
+      border-radius: 5px;
+      border: none;
+      margin: 10% 0;
+      padding: 4%;
+      width: 100%;
+  }
+}
