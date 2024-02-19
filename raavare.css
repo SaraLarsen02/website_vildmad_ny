@@ -193,21 +193,22 @@ footer {
 .icon_social {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 22%;
+    gap: 26%;
 }
 
 .img_icon_social {
     width: auto;
-    height: 4rem;
+    height: 3.4rem;
 }
 
 .logo_footer {
     height: auto;
-    width: 12%;
+    width: 16%;
 }
 
 .text_footer {
     color: white;
+    margin-top: 2%;
     
 }
 
