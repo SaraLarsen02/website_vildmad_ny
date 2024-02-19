@@ -12,7 +12,7 @@ fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data?id=eq.1", 
 
 function showData(items) {
   console.table(items);
-  document.querySelector(".name_raavare").textContent = items.name;
+  // document.querySelector(".name_raavare").textContent = items.name;
   // items.forEach()
 }
 
