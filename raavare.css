@@ -34,8 +34,6 @@ img {
     left: 42%;
     border-radius: 50%;
     box-shadow: 5px 5px 18px rgb(147, 147, 147)
-    /* align-items: center;
-    display: flex; */
 }
 
 /* --------------- BAGGRUND --------------- */
@@ -139,6 +137,46 @@ img {
         gap: 5vw;
         align-items: center;
     }
+
+    .img_raavare {
+        position: absolute;
+        height: auto;
+        width: 30%;
+        top: -6%;
+        left: 34%;
+        border-radius: 50%;
+        box-shadow: 5px 5px 18px rgb(147, 147, 147);
+    }
+
+    .green_backgrpund {
+        position: relative;
+        background-color: var(--light_green);
+        padding: 18% 5% 14% 5%;
+    }
+
+    .white_box {
+        display: flex;
+        gap: 8vw;
+        background-color: white;
+        border-radius: 30px;
+        margin: 6% 5% 0 5%;
+        padding: 11% 10% 11% 12%;
+      }
+    
+    .text_recipes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 12% 0 5% 0;
+    }
+
+    .recipes_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 7vw;
+        margin: 0 10% 8% 10%;
+      }
 }
 
 
@@ -155,27 +193,29 @@ footer {
 .icon_social {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 22%;
+    gap: 26%;
 }
 
 .img_icon_social {
     width: auto;
-    height: 4rem;
+    height: 3.4rem;
 }
 
 .logo_footer {
     height: auto;
-    width: 12%;
+    width: 16%;
 }
 
 .text_footer {
     color: white;
+    margin-top: 2%;
     
 }
 
 .logo_layout {
     display: flex;
     gap: 5%;
+    text-decoration: none;
 }
 
 /* FORM */
@@ -202,11 +242,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    border: 2px solid var(--primary_g);
 }
 
 button:hover {
-    transform: scale(1.08);
-    transition: 0.5s;
+    transition: 0.3s;
+    background-color: var(--background);
+    color: var(--primary_g);
+    border: 2px solid var(--primary_g);
 }
 
 .text_form {
@@ -214,3 +257,50 @@ button:hover {
     font-size: 1.6vw;
 }
 
+/* --------------- FOOTER - MOBILE --------------- */
+@media (max-width: 800px) {
+    footer {
+        background-color: rgb(25, 25, 25);
+        display: block;
+        padding: 11% 10% 12% 10%;
+    }
+
+    .logo_layout {
+        display: flex;
+        gap: 5%;
+        text-decoration: none;
+    }
+
+    .logo_footer {
+        height: auto;
+        width: 25%;
+    }
+
+    .text_footer {
+        color: white;
+        margin-top: 9%;
+      }
+
+    .icon_social {
+        display: flex;
+        gap: 9%;
+        margin-top: 14%;
+        margin-right: 0px;
+        margin-bottom: 14%;
+        margin-left: 0px;
+    }
+
+    /* FORMS */
+    .text_form {
+        color: white;
+        font-size: 6vw;
+      }
+    
+    input {
+        border-radius: 5px;
+        border: none;
+        margin: 10% 0;
+        padding: 4%;
+        width: 100%;
+    }
+}
