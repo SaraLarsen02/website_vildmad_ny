@@ -30,3 +30,20 @@ function showItem(item) {
   parent.appendChild(copy);
   console.log("name");
 }
+
+// const buttonCont = document.querySelector(".button_cont");
+// if (buttonCont != undefined) {
+//   function fetchCategories() {
+//     console.log("Category list detected.");
+fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data")
+  .then((res) => res.json())
+  .then(showCategories);
+
+function showCategories(cats) {
+  cats.forEach(showCategory);
+  console.log("Function is detected.");
+}
+
+function showCategory(cat) {
+  console.log("Function is detected.");
+}
