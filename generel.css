@@ -70,8 +70,8 @@ h4 {
 p {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
-  font-size: 1vw;
-  line-height: 1.4;
+  font-size: 1.2vw;
+  line-height: 1.5;
 }
 
 .grey {
@@ -119,6 +119,7 @@ p {
 }
 
 /* BRØDKRUMME */
+
 .breadcrumb {
   display: flex;
   list-style: none;
@@ -139,6 +140,15 @@ ol.breadcrumb a:hover {
   text-decoration: underline 1.5px;
 } 
 
+@media (max-width: 800px) {
+  .breadcrumb_link {
+    color: black;
+    text-decoration: none;
+    font-family: "Public Sans", sans-serif;
+    font-size: 12px;
+  }
+}
+
 
 /*Header start*/
 
@@ -157,8 +167,8 @@ ol.breadcrumb a:hover {
 }
 
 #bag_header {
-  height: 110px;
-  background-color: #282828;
+  height: 90px;
+  background-color: rgb(144, 144, 144);
   position: relative;
   top: -10px;
 }
@@ -170,20 +180,20 @@ ol.breadcrumb a:hover {
 }
 
 #logo_navn {
-  margin-top: 27px;
+  margin-top: 12px;
   font-size: 30px;
   font-family: "Inria Sans", sans-serif;
 }
 
 .logo {
-  width: 70px;
+  width: 48px;
   padding-top: 3px;
   padding-bottom: 5px;
   margin-left: 20px;
 }
 
 header {
-  height: 100px;
+  height: 80px;
   background-color: rgb(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
@@ -307,13 +317,41 @@ nav {
   .container a:hover {
     text-decoration: underline;
   }
+  #bag_header {
+    height: 110px;
+    background-color: rgb(144, 144, 144);
+    position: relative;
+    top: -10px;
+  }
+  header {
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    z-index: 100;
+    background-blend-mode: lighten;
+    color: white;
+  }
+  .logo {
+    width: 70px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+  }
+  #logo_navn {
+    margin-top: 27px;
+    font-size: 30px;
+    font-family: "Inria Sans", sans-serif;
+  }
 }
 
 /* HEADER SLUT*/
 
 /* --------------- FOOTER --------------- */
 footer {
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(81, 81, 81);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -390,7 +428,7 @@ input {
 /* --------------- FOOTER - MOBILE --------------- */
 @media (max-width: 800px) {
   footer {
-      background-color: rgb(25, 25, 25);
+      background-color: rgb(71, 71, 71);
       display: block;
       padding: 11% 10% 12% 10%;
   }
