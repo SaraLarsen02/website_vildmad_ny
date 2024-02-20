@@ -3,14 +3,18 @@
 
 //fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data?season=eq.Summer", {
 
-fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data", {
-  method: "GET",
-  headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJvanh6ZWVsc2F2d3llbG9rcmxrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5OTE3NzcsImV4cCI6MjAyMzU2Nzc3N30.ztX5wiBR7BQNfuQgA4MXfmbpFFtAu0T4yPQ6v3UNE28",
-  },
-})
-  .then((res) => res.json())
-  .then(showData);
+function fetchProducts(season) {
+  let url = "https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data";
+  if (season != undefined) url += "?season=eq." + season;
+  fetch(url, {
+    method: "GET",
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJvanh6ZWVsc2F2d3llbG9rcmxrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5OTE3NzcsImV4cCI6MjAyMzU2Nzc3N30.ztX5wiBR7BQNfuQgA4MXfmbpFFtAu0T4yPQ6v3UNE28",
+    },
+  })
+    .then((res) => res.json())
+    .then(showData);
+}
 
 function showData(items) {
   console.log(items);
@@ -34,19 +38,6 @@ function showItem(item) {
   console.log("name");
 }
 
-// const buttonCont = document.querySelector(".button_cont");
-// if (buttonCont != undefined) {
-//   function fetchCategories() {
-//     console.log("Category list detected.");
-// fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data")
-//   .then((res) => res.json())
-//   .then(showCategories);
-
-// function showCategories(cats) {
-//   cats.forEach(showCategory);
-//   console.log("Function is detected.");
-// }
-
-// function showCategory(cat) {
-//   console.log("Function is detected.");
-// }
+//http://127.0.0.1:5501/skov.html?season=Spring
+const seasonParam = new URLSearchParams(window.location.search).get("season");
+fetchProducts(seasonParam);

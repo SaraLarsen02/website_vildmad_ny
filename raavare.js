@@ -3,9 +3,12 @@
 
 // INDSAT
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
+// const id = urlParams.get("id");
+var id = urlParams.get("id");
+if (id == undefined) id = 1;
 
-fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data/" + id, {
+// fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data/" + id, {
+fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data?id=eq." + id, {
   method: "GET",
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJvanh6ZWVsc2F2d3llbG9rcmxrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5OTE3NzcsImV4cCI6MjAyMzU2Nzc3N30.ztX5wiBR7BQNfuQgA4MXfmbpFFtAu0T4yPQ6v3UNE28",
@@ -15,7 +18,9 @@ fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data/" + id, {
   .then((data) => showRaavare(data[0]));
 
 function showRaavare(raavare) {
-  document.querySelector(".img_raavare").src = `https://vildmadv2.vps.webdock.io/application/files/8916/2436/4262/Kantarel_ravarekort_app.png`;
+  console.log(raavare);
+  // document.querySelector(".img_raavare").src = `https://vildmadv2.vps.webdock.io/application/files/8916/2436/4262/Kantarel_ravarekort_app.png`;
+  document.querySelector(".img_raavare").src = raavare.image;
   document.querySelector(".name_raavare").textContent = raavare.name;
   document.querySelector(".text_description_raavare").textContent = raavare.description;
   document.querySelector(".text_season_raavare").textContent = raavare.season;
