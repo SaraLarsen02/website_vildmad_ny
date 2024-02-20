@@ -363,7 +363,7 @@ input {
   width: 140%;
 }
 
-button {
+.button_form {
   padding: 3% 6%;
   width: 55%;
   color: white;
@@ -375,7 +375,7 @@ button {
   border: 2px solid var(--primary_g);
 }
 
-button:hover {
+.button_form:hover {
   transition: 0.3s;
   background-color: var(--background);
   color: var(--primary_g);
