@@ -89,12 +89,12 @@
         </div>
         <h2 class="text_recipes">RECIPES</h2>
         <section class="recipes_section">
-            <!-- <template id="recipeTemplate"> -->
+            <template id="recipeTemplate">
                 <article class="recipes_hover">
                     <img class="img_recipes" src="indhold/img_recipes.webp" alt="Image">
                     <h4 class="name_recipes">Opskrift</h4>
                 </article>
-            <!-- </template> -->
+            </template>
             <!-- <article class="recipes_hover">
                 <img class="img_recipes" src="indhold/img_recipes.webp" alt="Image">
                 <h4 class="name_recipes">Opskrift</h4>
@@ -135,10 +135,10 @@
             <img class="img_icon_social" src="indhold/icon_footer_insta.webp" alt="Icon">
         </div>
         <div>
-            <form action="index.html" netlify>
+            <form action="raavare.html" name="register" method="POST" netlify>
                 <h3 class="text_form">REGISTER</h3>
-                <input type="text" placeholder="NAME">
-                <input type="text" placeholder="SCHOOL">
+                <label for="navn">Your name: <input type="text" name="navn" placeholder="NAME"></label>
+                <label for="school">School: <input type="text" name="school" placeholder="SCHOOL"></label>
                 <button class="button_form" type="submit">Confirm</button>
             </form>
         </div>
