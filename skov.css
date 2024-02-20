@@ -83,7 +83,7 @@ html {
   background-color: rgba(255, 254, 244, 1);
   border-radius: 30px;
   margin: 5%;
-  padding: 0 10% 10% 10%;
+  padding: 0 10% 50% 10%;
 }
 
 ol.breadcrumb {
@@ -112,6 +112,10 @@ ol.breadcrumb a:hover {
 .forest_list_image:hover {
   transform: scale(1.1);
 }
+
+a {
+  text-decoration: none;
+}
 @media screen and (max-width: 800px) {
   .p_info {
     font-family: "Public Sans", sans-serif;
@@ -133,7 +137,7 @@ ol.breadcrumb a:hover {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 10%;
     row-gap: 2%;
-    column-gap: 10%;
+    column-gap: 12%;
   }
 
   .item_name {
@@ -198,5 +202,12 @@ ol.breadcrumb a:hover {
     line-height: 1.4;
     text-decoration: none;
     margin-top: 10%;
+  }
+
+  .white_container {
+    background-color: rgba(255, 254, 244, 1);
+    border-radius: 30px;
+    margin: 5%;
+    padding: 0 10% 15% 10%;
   }
 }
