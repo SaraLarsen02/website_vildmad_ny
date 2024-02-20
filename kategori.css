@@ -11,7 +11,7 @@ img {
 }
 
 #body_farve{
-  background-color: #eeeeee;
+  background-color:var(--light_green);
 
 
 }
@@ -19,7 +19,7 @@ img {
 .baggrund_box {
   background-color: white;
   border-radius: 30px;
-  margin: 0% 5% 0 5%;
+  margin: 0% 5% 5% 5%;
   padding: 50px 10% 10% 15%;
   justify-content: center;
   height: 100%;
