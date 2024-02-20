@@ -149,6 +149,13 @@ img {
         box-shadow: 5px 5px 18px rgb(147, 147, 147);
     }
 
+    .name_raavare {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
     .green_backgrpund {
         position: relative;
         background-color: var(--light_green);
@@ -178,4 +185,11 @@ img {
         gap: 7vw;
         margin: 0 10% 8% 10%;
       }
+}
+
+/* HIDE */
+@media (max-width: 800px) {
+    .hide_mob {
+        display: none;
+    }
 }
