@@ -27,8 +27,28 @@ html {
   color: var(--background);
 }
 
+.margin_breadcrumb {
+  margin: 3% 0 0 2%;
+}
+
+.p_info {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 1.4;
+  padding: 5%;
+  max-width: 65ch;
+}
+
+.info_background {
+  background-color: rgba(255, 254, 244, 1);
+  border-radius: 30px;
+  margin: 3% 23%;
+}
+
 .green_background {
   background-color: var(--light_green);
+  padding-bottom: 5%;
 }
 
 .buttons_container {
@@ -36,10 +56,6 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5%;
-  /* margin: 0;
-  padding: 0; */
-
-  /* justify-content: space-between; */
 }
 .buttons_container button {
   width: 160px;
@@ -64,8 +80,7 @@ html {
 }
 
 .white_container {
-  /* background-color: var(--background); */
-  background-color: var(--background);
+  background-color: rgba(255, 254, 244, 1);
   border-radius: 30px;
   margin: 5%;
   padding: 0 10% 10% 10%;
@@ -77,39 +92,14 @@ ol.breadcrumb {
   margin: 20px;
   padding: 0;
   gap: 5px;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 ol.breadcrumb a:hover {
   text-decoration: underline;
 }
 
-/* DELETe */
-.button {
-  background-color: var(--primary_g);
-  padding: 3% 10%;
-  margin: 10% 0;
-  color: var(--background);
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  border: 2px solid var(--background);
-}
-
-.button:hover {
-  background-color: var(--background);
-  color: var(--primary_g);
-  border: 2px solid var(--primary_g);
-}
-/* delete end */
-
 .forest_list_image_container {
   text-align: center;
-  /* background-color: aqua; */
-  /* grid-template-rows: auto 1fr;
-  height: 350px;
-  display: grid;
-  justify-content: end; */
 }
 
 .forest_list_image {
@@ -123,6 +113,21 @@ ol.breadcrumb a:hover {
   transform: scale(1.1);
 }
 @media screen and (max-width: 800px) {
+  .p_info {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 1.4;
+    padding: 5%;
+    max-width: 65ch;
+  }
+
+  .info_background {
+    background-color: rgba(255, 254, 244, 1);
+    border-radius: 15px;
+    margin: 3% 8%;
+  }
+
   .forest_list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -133,8 +138,8 @@ ol.breadcrumb a:hover {
 
   .item_name {
     font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-size: 4vw;
+    font-weight: bold;
+    font-size: 3.5vw;
     text-decoration: none;
     margin-top: 25%;
   }
@@ -180,8 +185,8 @@ ol.breadcrumb a:hover {
 
   .item_name {
     font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-size: 2vw;
+    font-weight: bold;
+    font-size: 1.5vw;
     text-decoration: none;
     margin-top: 25%;
   }
@@ -189,7 +194,7 @@ ol.breadcrumb a:hover {
   .forest_name {
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 1vw;
     line-height: 1.4;
     text-decoration: none;
     margin-top: 10%;
