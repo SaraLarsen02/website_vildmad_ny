@@ -26,6 +26,9 @@ function showItem(item) {
   copy.querySelector(".item_name").textContent = item.name;
   copy.querySelector(".forest_name").textContent = item.type_forest;
 
+  // INDSAT
+  copy.querySelector(".read-more").setAttribute("href", `raavare.html?id=${item.id}`);
+
   const parent = document.querySelector(".forest_list");
   parent.appendChild(copy);
   console.log("name");
