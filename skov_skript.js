@@ -26,6 +26,9 @@ function showItem(item) {
   copy.querySelector(".item_name").textContent = item.name;
   copy.querySelector(".forest_name").textContent = item.type_forest;
 
+  // INDSAT
+  copy.querySelector(".read-more").setAttribute("href", `raavare.html?id=${item.id}`);
+
   const parent = document.querySelector(".forest_list");
   parent.appendChild(copy);
   console.log("name");
@@ -35,15 +38,15 @@ function showItem(item) {
 // if (buttonCont != undefined) {
 //   function fetchCategories() {
 //     console.log("Category list detected.");
-fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data")
-  .then((res) => res.json())
-  .then(showCategories);
+// fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data")
+//   .then((res) => res.json())
+//   .then(showCategories);
 
-function showCategories(cats) {
-  cats.forEach(showCategory);
-  console.log("Function is detected.");
-}
+// function showCategories(cats) {
+//   cats.forEach(showCategory);
+//   console.log("Function is detected.");
+// }
 
-function showCategory(cat) {
-  console.log("Function is detected.");
-}
+// function showCategory(cat) {
+//   console.log("Function is detected.");
+// }
