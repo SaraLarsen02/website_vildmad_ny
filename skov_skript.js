@@ -35,15 +35,15 @@ function showItem(item) {
 // if (buttonCont != undefined) {
 //   function fetchCategories() {
 //     console.log("Category list detected.");
-fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data")
-  .then((res) => res.json())
-  .then(showCategories);
+// fetch("https://rojxzeelsavwyelokrlk.supabase.co/rest/v1/vild_mad_data")
+//   .then((res) => res.json())
+//   .then(showCategories);
 
-function showCategories(cats) {
-  cats.forEach(showCategory);
-  console.log("Function is detected.");
-}
+// function showCategories(cats) {
+//   cats.forEach(showCategory);
+//   console.log("Function is detected.");
+// }
 
-function showCategory(cat) {
-  console.log("Function is detected.");
-}
+// function showCategory(cat) {
+//   console.log("Function is detected.");
+// }
