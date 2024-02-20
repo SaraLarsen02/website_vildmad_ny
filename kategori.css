@@ -160,14 +160,16 @@ img {
     width: 50%;
     left: 25%;
     position: relative;
-    top: 25%;
+    top: 20%;
     padding: 30px;
     border-radius: 30px;
   }
 
   #closePopup {
-    margin: 25px;
-    margin-left: 37%;
+    padding: 2% 5%;
+    margin: 5% 37%;
+    border-radius: 10px;
+    width: 25%;
   }
 }
 
@@ -179,10 +181,11 @@ img {
 }
 
 .kate_button {
+  width:80%;
   color: white;
   background-color: var(--primary_g);
   padding: 3% 10%;
-  margin: 5% 0;
+  margin: 10% 0;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
@@ -237,7 +240,12 @@ img {
 .button_by {
   background-color: #745274;
 }
+.button_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 
+}
 /*pop up knap*/
 .show {
   display: block;

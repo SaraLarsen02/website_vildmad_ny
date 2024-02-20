@@ -24,16 +24,22 @@
                 <img class="logo" src="indhold/logo.svg" alt="Vild mad logo">
                 <h2 id="logo_navn">VILD MAD</h2>
             </a>
+            <div>
+                <nav>
+                    <a href="kategori.html">Landscapes</a>
+                    <!-- <a href="skov.html">Forest</a>
+                    <a href="raavare.html">Ingredients</a> -->
+                    <a href="">Lexicon</a>
+                </nav>
+                <div>
+                    <button class="hamburger">
+                        <span class="bar"></span>
+                    </button>
+                </div>
 
-            <nav>
-                <a href="kategori.html">Landscapes</a>
-                <!-- <a href="skov.html">Forest</a>
-                <a href="raavare.html">Ingredients</a> -->
-                <a href="">Lexicon</a>
-            </nav>
-            <button class="hamburger">
-                <span class="bar"></span>
-            </button>
+            </div>
+
+
         </div>
         <nav class="mobile-nav">
             <a href="kategori.html">Landscapes</a>
@@ -57,10 +63,6 @@
                 <li><a class="breadcrumb_link" href="index.html">FRONT PAGE</a></li>
                 <li>&#32;&#62;</li>
                 <li><a class="breadcrumb_link" href="kategori.html">LANDSCAPES</a></li>
-                <li>&#32;&#62;</li>
-                <li class="breadcrumb-cat"><a class="breadcrumb_link" href="skov.html">FOREST</a></li>
-                <li>&#32;&#62;</li>
-                <li class="breadcrumb-cat"><a class="breadcrumb_link" href="raavare.html">INGREDIENT</a></li>
             </ol>
         </div>
         <div class="baggrund_box">
@@ -76,7 +78,7 @@
                     </p>
                     <div class="button_grid">
                         <button class="kate_button button_land">Information</button>
-                        <button class="kate_button button_land">Read More</button>
+                        <button class="kate_button button_land">Discover</button>
                     </div>
                 </div>
             </section>
@@ -91,7 +93,7 @@
                     </p>
                     <div class="button_grid" id="button_hav">
                         <button class="kate_button button_hav">Information</button>
-                        <button class="kate_button button_hav">Read More</button>
+                        <button class="kate_button button_hav">Discover</button>
                     </div>
                 </div>
                 <div></div>
@@ -108,8 +110,9 @@
                     </p>
                     <div class="button_grid" id="button_skov">
                         <button class="kate_button button_skov skov_info">Information</button>
-                        <button class="kate_button button_skov"> <a id="link_skov" href="skov.html">Read
-                                More</a></button>
+
+                        <button class="kate_button button_skov"
+                            onclick="window.location.href='skov.html';">Discover</button>
                     </div>
                 </div>
             </section>
@@ -125,7 +128,7 @@
                     </p>
                     <div class="button_grid" id="button_by">
                         <button class="kate_button button_by">Information</button>
-                        <button class="kate_button button_by">Read More</button>
+                        <button class="kate_button button_by">Discover</button>
                     </div>
                 </div>
             </section>
@@ -148,9 +151,12 @@
                         ideal environment for mushrooms. Additionally, some berries and herbs have adapted to the acidic
                         and nutrient-poor conditions.
                     </p>
-                    <button class="kate_button" id="closePopup">
+                    <button id="closePopup">
                         Close
                     </button>
+                    <!-- <button class="kate_button" id="closePopup">
+                        Close
+                    </button> -->
                 </div>
 
             </div>
