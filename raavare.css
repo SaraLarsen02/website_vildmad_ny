@@ -43,8 +43,8 @@ img {
 }
 
 .white_box {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5%;
   background-color: white;
   border-radius: 30px;
@@ -53,13 +53,6 @@ img {
 }
 
 /* --------------- LAYOUT --------------- */
-.facts_article {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
 
 .text_recipes {
   display: flex;
@@ -79,8 +72,6 @@ img {
 /* --------------- DYNAMISK --------------- */
 /* Navn på råvare */
 .name_raavare {
-  /* margin: 0 0 0 44%; */
-  /* display: flex; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -93,22 +84,10 @@ img {
   width: 28%;
 }
 
-.description_raavare {
-}
-
-.text_description_raavare {
-}
-
 /* Season */
 .icon_season {
   height: auto;
   width: 28%;
-}
-
-.season_raavare {
-}
-
-.text_season_raavare {
 }
 
 /* Storage */
@@ -117,15 +96,7 @@ img {
   width: 28%;
 }
 
-.storage_raavare {
-}
-
-.text_storage_raavare {
-}
-
 /* Recipes */
-.img_recipes {
-}
 
 .name_recipes {
   text-align: center;
@@ -193,11 +164,17 @@ img {
     gap: 7vw;
     margin: 0 10% 8% 10%;
   }
-}
 
-/* HIDE */
-@media (max-width: 800px) {
   .hide_mob {
     display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .facts_article {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    align-items: center;
   }
 }
